@@ -4,13 +4,14 @@ body{
 	color:black;
 	margin: 0 auto;
 	font-family: 'Kosugi', sans-serif;
+	background-color: paleturquoise;
 }
 
 #wrapper {
 	display: grid;
 	margin: 0 auto;
 	width: 1024px;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 0.75fr;
 	grid-template-rows:
 		128px
 		512px
@@ -23,21 +24,26 @@ body{
 
 header {
 	grid-area: h;
-	background-color: chartreuse;
+	background-color: greenyellow;
 	font-size: 3em;
 	vertical-align: center;
+	display: flex;
+	align-items: center;
+	padding-left: 0.5em;
+	color: white;
 }
 main {
 	grid-area: m;
-	background-color: ghostwhite;
+	background-color: lavender;
+	font-size: 1em;
 }
 nav {
 	grid-area: n;
-	background-color: gold;
+	background-color: tomato;
 }
 footer {
 	grid-area: f;
-	background-color: navy;
+	background-color: #007bbb;
 	color: white;
 }
 
@@ -46,7 +52,7 @@ main, nav, footer {
 }
 
 .contents {
-	border-radius: 8px;
+	border-radius: 20px;
 }
 
 footer > a {
