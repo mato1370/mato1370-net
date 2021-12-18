@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+
+body{
+	color:black;
+	margin: 0 auto;
+	font-family: 'Kosugi', sans-serif;
+}
+
+#wrapper {
+	display: grid;
+	margin: 0 auto;
+	width: 1024px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows:
+		128px
+		512px
+		128px;
+	grid-template-areas:
+		"h h h"
+		"m m n"
+		"f f f";
+}
+
+header {
+	grid-area: h;
+	background-color: chartreuse;
+	font-size: 3em;
+	vertical-align: center;
+}
+main {
+	grid-area: m;
+	background-color: ghostwhite;
+}
+nav {
+	grid-area: n;
+	background-color: gold;
+}
+footer {
+	grid-area: f;
+	background-color: navy;
+	color: white;
+}
+
+main, nav, footer {
+	padding:  1em;
+}
+
+.contents {
+	border-radius: 8px;
+}
+
+footer > a {
+	color: white;
+}
+
+
