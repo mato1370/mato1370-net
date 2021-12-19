@@ -59,4 +59,28 @@ footer > a {
 	color: white;
 }
 
+main > h2{
+	color: green;
+}
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 
+	margin: 1em 0;
+	padding: 0.6em 1em;
+	font-size: 1em;
+	background-color: #1aa1ff;
+	color: black;
+	cursor: pointer;
+	border-radius: 3px;
+	border: none;
+	transition: 0.3s;
+	border-bottom: 4px;
+	border-color: grey;
+
+}
+
+button:hover {
+	background-color: #064fda;
+}
