@@ -14,7 +14,7 @@ body{
 	grid-template-columns: 1fr 1fr 0.75fr;
 	grid-template-rows:
 		128px
-		512px
+		1fr
 		128px;
 	grid-template-areas:
 		"h h h"
@@ -31,11 +31,13 @@ header {
 	align-items: center;
 	padding-left: 0.5em;
 	color: white;
+	
 }
 main {
 	grid-area: m;
 	background-color: lavender;
 	font-size: 1em;
+	min-height: 20em;
 }
 nav {
 	grid-area: n;
@@ -71,16 +73,22 @@ main > h2{
 	padding: 0.6em 1em;
 	font-size: 1em;
 	background-color: #1aa1ff;
-	color: black;
+	color: white;
 	cursor: pointer;
 	border-radius: 3px;
 	border: none;
 	transition: 0.3s;
-	border-bottom: 4px;
 	border-color: grey;
+	position: relative;
+	box-shadow: 0 4px 0 grey;
 
 }
 
 button:hover {
 	background-color: #064fda;
+}
+
+button:active {
+	top: 4px;
+	box-shadow: none;
 }
