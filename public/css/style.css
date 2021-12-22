@@ -20,6 +20,7 @@ body{
 		"h h h"
 		"m m n"
 		"f f f";
+
 }
 
 header {
@@ -92,23 +93,11 @@ button:active {
 	box-shadow: none;
 }
 
-.main_window{
-	background-color: white;
-	border-radius: 33px;
-	text-align: left;
-	padding: var(-windou-padding);
-	transition: 3s;
-}
-
-main h1 a{
-	color: white;
-}
-
 .blog{
-	display: inline-grid;
+  display: grid;
 	margin: 0 auto;
 	width: 1024px;
-/*	grid-template-columns: 1fr 1fr 0.75fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows:
 		128px
 		1fr
@@ -116,21 +105,42 @@ main h1 a{
 	grid-template-areas:
 		"h h h"
 		"m m m"
-		"f f f";*/
+		"f f f";
+
 }
 
-#title{
-	display: block;
-    font-size: 1em;
-    /*margin-block-start: 0.67em;
-    margin-block-end: 0.67em;*/
-    /*margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;*/
+.main_window{
+	background-color: white;
+	border-radius: 12px;
+	text-align: left;
+	padding: var(-windou-padding);
+	transition: 3s;
+	font-size: 1em;
 }
 
 #blog_main{
-	background-color: blue;
-	border-radius: 33px;
-	margin-top: 0px;
+	background-color: whitesmoke;
+	border-radius: 12px;
+	padding: 1em;
+}
+
+@media screen and (min-width: 480px){
+	grid-template-areas:
+		"h h h"
+		"m m n"
+		"f f f";
+}
+
+@media screen and (min-width: 760px) and (max-width: 960px){
+	grid-template-areas:
+		"h h h"
+		"m m n"
+		"f f f";
+}
+
+@media screen and (max-width: 960px){
+	grid-template-areas:
+		"h h h"
+		"m m n"
+		"f f f";
 }
