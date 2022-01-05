@@ -120,7 +120,7 @@ button:active {
 	background-color: white;
 	border-radius: 12px;
 	text-align: left;
-	padding: var(-windou-padding);
+	padding: var(-window-padding);
 	transition: 3s;
 	font-size: 1em;
 }
